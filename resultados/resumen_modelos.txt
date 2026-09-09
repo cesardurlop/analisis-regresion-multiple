@@ -1,0 +1,176 @@
+
+
+================================================================================
+ALUMINIO
+================================================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:               aluminio   R-squared:                       0.168
+Model:                            OLS   Adj. R-squared:                  0.141
+Method:                 Least Squares   F-statistic:                     6.144
+Date:                Wed, 09 Sep 2026   Prob (F-statistic):           0.000750
+Time:                        04:22:56   Log-Likelihood:                 82.116
+No. Observations:                  95   AIC:                            -156.2
+Df Residuals:                      91   BIC:                            -146.0
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.0034      0.011      0.311      0.756      -0.018       0.025
+tipo_cambio     0.0081      0.019      0.417      0.677      -0.030       0.046
+petroleo        0.0070      0.002      3.502      0.001       0.003       0.011
+industria       0.0046      0.004      1.216      0.227      -0.003       0.012
+==============================================================================
+Omnibus:                       43.240   Durbin-Watson:                   1.220
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              152.109
+Skew:                          -1.477   Prob(JB):                     9.33e-34
+Kurtosis:                       8.450   Cond. No.                         11.1
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Métricas fuera de muestra 2023-2024:
+{'MAE': 0.15432737240536784, 'RMSE': 0.17952795836247265, 'MAPE_pct': np.float64(6.820199583345693)}
+
+Diagnósticos:
+{'R2_train': np.float64(0.16842811997184814), 'R2_adj_train': np.float64(0.14101366238850244), 'F_pvalue': np.float64(0.000750116988516776), 'Durbin_Watson': np.float64(1.2200651670823706), 'Jarque_Bera_pvalue': np.float64(9.33367352625957e-34), 'Breusch_Pagan_pvalue': np.float64(0.43318711963928125)}
+
+VIF:
+   variable      VIF
+tipo_cambio 1.327369
+   petroleo 1.263675
+  industria 1.181091
+
+
+================================================================================
+COBRE
+================================================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  cobre   R-squared:                       0.147
+Model:                            OLS   Adj. R-squared:                  0.118
+Method:                 Least Squares   F-statistic:                     5.207
+Date:                Wed, 09 Sep 2026   Prob (F-statistic):            0.00230
+Time:                        04:22:57   Log-Likelihood:                -24.213
+No. Observations:                  95   AIC:                             56.43
+Df Residuals:                      91   BIC:                             66.64
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.0205      0.033      0.620      0.537      -0.045       0.086
+tipo_cambio    -0.0038      0.059     -0.065      0.949      -0.121       0.114
+petroleo        0.0203      0.006      3.292      0.001       0.008       0.033
+industria       0.0064      0.012      0.548      0.585      -0.017       0.029
+==============================================================================
+Omnibus:                       21.491   Durbin-Watson:                   1.729
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               48.602
+Skew:                          -0.794   Prob(JB):                     2.79e-11
+Kurtosis:                       6.124   Cond. No.                         11.1
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Métricas fuera de muestra 2023-2024:
+{'MAE': 0.44139676498897645, 'RMSE': 0.5349517006437935, 'MAPE_pct': np.float64(4.908791223276071)}
+
+Diagnósticos:
+{'R2_train': np.float64(0.14651405685455576), 'R2_adj_train': np.float64(0.11837715762998058), 'F_pvalue': np.float64(0.0023036916032541746), 'Durbin_Watson': np.float64(1.729099976128475), 'Jarque_Bera_pvalue': np.float64(2.7939438746878217e-11), 'Breusch_Pagan_pvalue': np.float64(0.7325781280677492)}
+
+VIF:
+   variable      VIF
+tipo_cambio 1.327369
+   petroleo 1.263675
+  industria 1.181091
+
+
+================================================================================
+NIQUEL
+================================================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 niquel   R-squared:                       0.064
+Model:                            OLS   Adj. R-squared:                  0.033
+Method:                 Least Squares   F-statistic:                     2.063
+Date:                Wed, 09 Sep 2026   Prob (F-statistic):              0.111
+Time:                        04:22:58   Log-Likelihood:                 31.239
+No. Observations:                  95   AIC:                            -54.48
+Df Residuals:                      91   BIC:                            -44.26
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.0086      0.018      0.465      0.643      -0.028       0.045
+tipo_cambio    -0.0028      0.033     -0.084      0.933      -0.068       0.063
+petroleo        0.0074      0.003      2.143      0.035       0.001       0.014
+industria       0.0007      0.006      0.102      0.919      -0.012       0.014
+==============================================================================
+Omnibus:                       15.140   Durbin-Watson:                   2.050
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               30.766
+Skew:                          -0.561   Prob(JB):                     2.09e-07
+Kurtosis:                       5.552   Cond. No.                         11.1
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Métricas fuera de muestra 2023-2024:
+{'MAE': 0.5425898821101186, 'RMSE': 0.6018534328721877, 'MAPE_pct': np.float64(21.11100387516295)}
+
+Diagnósticos:
+{'R2_train': np.float64(0.06366967307624127), 'R2_adj_train': np.float64(0.032801640320512915), 'F_pvalue': np.float64(0.1106809910233398), 'Durbin_Watson': np.float64(2.050347896022005), 'Jarque_Bera_pvalue': np.float64(2.086128782071896e-07), 'Breusch_Pagan_pvalue': np.float64(0.3773283432210224)}
+
+VIF:
+   variable      VIF
+tipo_cambio 1.327369
+   petroleo 1.263675
+  industria 1.181091
+
+
+================================================================================
+ZINC
+================================================================================
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   zinc   R-squared:                       0.064
+Model:                            OLS   Adj. R-squared:                  0.033
+Method:                 Least Squares   F-statistic:                     2.063
+Date:                Wed, 09 Sep 2026   Prob (F-statistic):              0.111
+Time:                        04:22:58   Log-Likelihood:                 31.239
+No. Observations:                  95   AIC:                            -54.48
+Df Residuals:                      91   BIC:                            -44.26
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const           0.0086      0.018      0.465      0.643      -0.028       0.045
+tipo_cambio    -0.0028      0.033     -0.084      0.933      -0.068       0.063
+petroleo        0.0074      0.003      2.143      0.035       0.001       0.014
+industria       0.0007      0.006      0.102      0.919      -0.012       0.014
+==============================================================================
+Omnibus:                       15.140   Durbin-Watson:                   2.050
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               30.766
+Skew:                          -0.561   Prob(JB):                     2.09e-07
+Kurtosis:                       5.552   Cond. No.                         11.1
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Métricas fuera de muestra 2023-2024:
+{'MAE': 0.5425898821101186, 'RMSE': 0.6018534328721877, 'MAPE_pct': np.float64(21.11100387516295)}
+
+Diagnósticos:
+{'R2_train': np.float64(0.06366967307624127), 'R2_adj_train': np.float64(0.032801640320512915), 'F_pvalue': np.float64(0.1106809910233398), 'Durbin_Watson': np.float64(2.050347896022005), 'Jarque_Bera_pvalue': np.float64(2.086128782071896e-07), 'Breusch_Pagan_pvalue': np.float64(0.3773283432210224)}
+
+VIF:
+   variable      VIF
+tipo_cambio 1.327369
+   petroleo 1.263675
+  industria 1.181091
