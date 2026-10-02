@@ -8,8 +8,8 @@ ALUMINIO
 Dep. Variable:               aluminio   R-squared:                       0.168
 Model:                            OLS   Adj. R-squared:                  0.141
 Method:                 Least Squares   F-statistic:                     6.144
-Date:                Wed, 09 Sep 2026   Prob (F-statistic):           0.000750
-Time:                        04:22:56   Log-Likelihood:                 82.116
+Date:                Fri, 02 Oct 2026   Prob (F-statistic):           0.000750
+Time:                        00:04:43   Log-Likelihood:                 82.116
 No. Observations:                  95   AIC:                            -156.2
 Df Residuals:                      91   BIC:                            -146.0
 Df Model:                           3                                         
@@ -52,8 +52,8 @@ COBRE
 Dep. Variable:                  cobre   R-squared:                       0.147
 Model:                            OLS   Adj. R-squared:                  0.118
 Method:                 Least Squares   F-statistic:                     5.207
-Date:                Wed, 09 Sep 2026   Prob (F-statistic):            0.00230
-Time:                        04:22:57   Log-Likelihood:                -24.213
+Date:                Fri, 02 Oct 2026   Prob (F-statistic):            0.00230
+Time:                        00:04:44   Log-Likelihood:                -24.213
 No. Observations:                  95   AIC:                             56.43
 Df Residuals:                      91   BIC:                             66.64
 Df Model:                           3                                         
@@ -93,37 +93,37 @@ NIQUEL
 ================================================================================
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:                 niquel   R-squared:                       0.064
-Model:                            OLS   Adj. R-squared:                  0.033
-Method:                 Least Squares   F-statistic:                     2.063
-Date:                Wed, 09 Sep 2026   Prob (F-statistic):              0.111
-Time:                        04:22:58   Log-Likelihood:                 31.239
-No. Observations:                  95   AIC:                            -54.48
-Df Residuals:                      91   BIC:                            -44.26
+Dep. Variable:                 niquel   R-squared:                       0.070
+Model:                            OLS   Adj. R-squared:                  0.039
+Method:                 Least Squares   F-statistic:                     2.283
+Date:                Fri, 02 Oct 2026   Prob (F-statistic):             0.0843
+Time:                        00:04:44   Log-Likelihood:                -167.25
+No. Observations:                  95   AIC:                             342.5
+Df Residuals:                      91   BIC:                             352.7
 Df Model:                           3                                         
 Covariance Type:            nonrobust                                         
 ===============================================================================
                   coef    std err          t      P>|t|      [0.025      0.975]
 -------------------------------------------------------------------------------
-const           0.0086      0.018      0.465      0.643      -0.028       0.045
-tipo_cambio    -0.0028      0.033     -0.084      0.933      -0.068       0.063
-petroleo        0.0074      0.003      2.143      0.035       0.001       0.014
-industria       0.0007      0.006      0.102      0.919      -0.012       0.014
+const           0.1355      0.149      0.911      0.365      -0.160       0.431
+tipo_cambio    -0.1042      0.267     -0.390      0.697      -0.634       0.426
+petroleo        0.0607      0.028      2.189      0.031       0.006       0.116
+industria      -0.0115      0.052     -0.220      0.827      -0.115       0.092
 ==============================================================================
-Omnibus:                       15.140   Durbin-Watson:                   2.050
-Prob(Omnibus):                  0.001   Jarque-Bera (JB):               30.766
-Skew:                          -0.561   Prob(JB):                     2.09e-07
-Kurtosis:                       5.552   Cond. No.                         11.1
+Omnibus:                       26.156   Durbin-Watson:                   1.297
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              213.917
+Skew:                           0.356   Prob(JB):                     3.54e-47
+Kurtosis:                      10.317   Cond. No.                         11.1
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 
 Métricas fuera de muestra 2023-2024:
-{'MAE': 0.5425898821101186, 'RMSE': 0.6018534328721877, 'MAPE_pct': np.float64(21.11100387516295)}
+{'MAE': 11.590494240564631, 'RMSE': 12.351186323019267, 'MAPE_pct': np.float64(65.76996709768682)}
 
 Diagnósticos:
-{'R2_train': np.float64(0.06366967307624127), 'R2_adj_train': np.float64(0.032801640320512915), 'F_pvalue': np.float64(0.1106809910233398), 'Durbin_Watson': np.float64(2.050347896022005), 'Jarque_Bera_pvalue': np.float64(2.086128782071896e-07), 'Breusch_Pagan_pvalue': np.float64(0.3773283432210224)}
+{'R2_train': np.float64(0.0699973455424443), 'R2_adj_train': np.float64(0.039337917373513775), 'F_pvalue': np.float64(0.08431767034131724), 'Durbin_Watson': np.float64(1.2971572248340208), 'Jarque_Bera_pvalue': np.float64(3.535724687463378e-47), 'Breusch_Pagan_pvalue': np.float64(0.19006084622047786)}
 
 VIF:
    variable      VIF
@@ -140,8 +140,8 @@ ZINC
 Dep. Variable:                   zinc   R-squared:                       0.064
 Model:                            OLS   Adj. R-squared:                  0.033
 Method:                 Least Squares   F-statistic:                     2.063
-Date:                Wed, 09 Sep 2026   Prob (F-statistic):              0.111
-Time:                        04:22:58   Log-Likelihood:                 31.239
+Date:                Fri, 02 Oct 2026   Prob (F-statistic):              0.111
+Time:                        00:04:45   Log-Likelihood:                 31.239
 No. Observations:                  95   AIC:                            -54.48
 Df Residuals:                      91   BIC:                            -44.26
 Df Model:                           3                                         
